@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+/* Header */
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seções */
+section {
+    background: #1e293b;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Imagem */
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #334155;
+    padding: 10px;
+}
+
+th {
+    background-color: #020617;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Foco acessível */
+input:focus, button:focus {
+    outline: 3px solid #38bdf8;
+}
+
+/* Botão */
+button {
+    background-color: #38bdf8;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0ea5e9;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
