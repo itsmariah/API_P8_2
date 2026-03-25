@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+}
+
+/* Container central */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #0ea5e9, transparent);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+/* CARDS */
+.card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* Hover nos cards */
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* LISTAS */
+ul li, ol li {
+    margin: 8px 0;
+    transition: 0.2s;
+}
+
+ul li:hover, ol li:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* IMAGEM */
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #334155;
+    text-align: left;
+}
+
+th {
+    background: #020617;
+}
+
+tr {
+    transition: 0.2s;
+}
+
+tr:hover {
+    background: #0ea5e9;
+    color: black;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* INPUTS */
+input {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #020617;
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* BOTÃO */
+.btn {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Clique */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* FOCO ACESSÍVEL */
+input:focus, button:focus {
+    outline: 3px solid #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 20px;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
